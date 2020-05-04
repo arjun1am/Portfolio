@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Me</title>
+    <title>About</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/wsg7vkf.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
-  <!-- <div class="email">
-     <a href="mailto:arjuna1am.am@gmail.com" TITLE=" email me">arjuna1am.am@gmail.com</a>
-  </div> -->
+  <nav class="homeicon">
+    <a href="../index.html">
+      <svg class="backnav"height="20" width="140">
+      <text x="10" y="15">Arjun Menon</text>
+      </svg>
+    </a>
+  </nav>
+  <nav class="abouticon">
+    <a href="about.html">
+      <svg class="backnav"height="20" width="75">
+      <text x="0" y="15">About</text>
+      </svg>
+    </a>
+  </nav>
+  <nav class="contacticon">
+    <a href="mailto:arjuna1am.am@gmail.com">
+      <svg class="backnav"height="20" width="80">
+      <text x="0" y="15">Contact</text>
+      </svg>
+    </a>
+  </nav>
 
-<div class="email">
-  <a href="mailto:arjuna1am.am@gmail.com" TITLE=" email me">
-  <svg class="backnav" height="80" width="360">
-<text x="0" y="30">arjuna1am.am@gmail.com</text>
-</svg>
-</a>
+<div id="overlayabout" onclick="offab()">
+  <div id="textabout">
+    Take a moment to notice your breath<br>
+<span style="font-size:12px;opacity:.5;font-family: 'Inter var';">tap anywhere once you are done</span>
+  </div>
 </div>
 
-<nav>
-  <a href="../index.html">
-    <svg id="backnav"height="80" width="200">
-    <text x="0" y="30">home</text>
-    </svg>
-  </a>
-</nav>
-
-    <div id="cursor" class="Cursor"></div>
-
-<!-- <section class="aboutmain"> -->
-   <div class="gridabout">
-
-            <div class="abouthead">
-            About Me
-          </div>
-
-<div class="aboutparagraph">
-         <p>
-
-        I am a graduating interaction design student from
-        Emily Carr University of Art and Design in Vancouver BC. My hometown is
-        the sunny San Diego, California.
-<br>
-<br>
-
-<blockquote >
-          my approach to design is influenced by my interest and practice of mindfulness.
-</blockquote>
-<br>
-        In mindfulness meditation we become aware of  the thoughts and patterns of our mind.
-        Similarly, as a designer I try and be aware of the systems and assumptions we have
-        during a project. I then validate through user centred research and design methods.
-<br><br>
-        I believe the most creative work comes from a place of fearlessness and experimentation.
-        With a strong foundational knowlege of design, I am able to push the boundaries and
-        create captivating visual compositions using established as well as emerging technology.
-        My love for design exploration, experimentation, and play allow me to constantly learn
-        and ultimately create captivating interactions and experiences.
-        </p>
+<div class="intro">
+  <span style="font-size:45px; margin-top:10%;">
+    About Me:<br><br>
+    I am a recent interaction design graduate from
+    <span><a href="https://www.ecuad.ca/" target="_blank">Emily Carr University of Art and Design</a></span> in 🌧️Vancouver BC. My hometown is
+    the sunny ☀️San Diego, California.
+    <br><br>
+    My approach to design is influenced by my interest and practice of
+    <button style="font-size:45px;"onclick="onab()">
+      <span>
+      mindfulness
+     </span>
+   </button>
+   <div id="cursor" class="Cursor"></div>
+    <br><br>
+  </span>
 </div>
 
-   </div>
-<!-- </section> -->
+<p class="aboutsplit">
+  <span class="aboutitem">
+  In mindfulness meditation we try and become aware of  the thoughts and patterns of our mind.
+  Similarly, as a designer I try and be aware of the systems and assumptions we have
+  during a project. I then validate through user centered research and design methods.
+  <br><br>
+  </span>
+  <span class="aboutitem">
+  With this mindful approach to design, and my love for design experimentation and play,
+  I am able to push the boundaries and create captivating interactions
+  and experiences using established as well as emerging technology.
+  <br><br>
+  </span>
+</p>
 
+<div class="aboutsplit">
+  <blockquote class="nextp connectitem">
+    <a>Let's Connect:</a>
+  </blockquote>
+  <blockquote class="nextp connectitem">
+    <a href="mailto:arjuna1am.am@gmail.com">Email (arjuna1am.am@gmail.com)</a>
+  </blockquote>
+  <blockquote class="nextp connectitem">
+    <a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a>
+  </blockquote>
+  <blockquote class="nextp connectitem">
+    <a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a>
+  </blockquote>
+</div>
 
 <footer>
   <div class="projnav">
-    <a href="projectcometta.html">Comettā</a><br>
-    <a href="projectmindful.html">Mindful Interactions</a><br>
+    <a href="projectcometta.html">Cometta</a><br>
     <a href="projecttedx.html">TEDx</a><br>
-
+    <a href="about.html">About</a><br>
   </div>
   <div class="contact">
     <a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a><br>
@@ -79,12 +98,11 @@
     <a href="mailto:arjuna1am.am@gmail.com">Email</a>
   </div>
   <div class="siteinfo">
-    Designed and Coded by Arjun Menon
-    <!-- <br> background made using P5.js -->
+    Designed and Coded by Arjun Menon  <br>
+    Typefaces: P22 mackinac Pro and Inter
   </div>
 </footer>
 
 <script src="../js/script.js"></script>
-
 </body>
 </html>
