@@ -17,6 +17,7 @@ body {
   cursor: default;
   background-color:white;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
   overflow-x: hidden;
 }
@@ -179,6 +180,7 @@ p{
   font-size:17px;
   line-height:1.6;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
   color:#8f949c;
 }
@@ -287,6 +289,7 @@ p{
 /* footer sections */
 footer{
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
   font-size:15px;
   display:flex;
@@ -357,6 +360,7 @@ footer a:hover{
   line-height: normal;
   /* font:30px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif; */
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 550 ;
 }
 .subheadingdark{
@@ -374,12 +378,14 @@ footer a:hover{
   font-size:17px;
   line-height:1.6;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
 }
 .paragraph strong {
   font-size:17px;
   line-height:1.5;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 500 ;
   color:#4287f5;
 }
@@ -395,6 +401,7 @@ footer a:hover{
   font-size:17px;
   line-height:1.5;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
   background-color:rgba(35, 48, 66,.05);
   border-radius: 10px;
@@ -469,6 +476,7 @@ blockquote span{
   color:#233042;
   text-align: center;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 550 ;
   max-width: 700px;
   margin:auto;
@@ -495,6 +503,7 @@ blockquote span{
   font-size:17px;
   line-height:1.5;
   font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
   font-weight: 400 ;
   border-radius: 10px;
   margin:0px 0px 0px 50px;
