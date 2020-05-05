@@ -15,6 +15,8 @@ function on() {
 
 function off() {
   document.getElementById("overlay").style.clipPath = "circle(0.0% at 14% 43%)";
+  console.log('this does not work in safari rip');
+
 }
 
 
