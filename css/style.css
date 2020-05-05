@@ -134,6 +134,16 @@ nav a{
   font-weight: 400;
   font-style: normal;
 }
+/* make this overlay thing not work on safari */
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    #overlay{
+      display:none;
+    }
+    #overlayabout{
+      display:none;
+    }
+}}
 button{
   border: none;
   background-color: rgba(1,1,1,0);
