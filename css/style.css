@@ -134,16 +134,6 @@ nav a{
   font-weight: 400;
   font-style: normal;
 }
-/* make this overlay thing not work on safari */
-@media not all and (min-resolution:.001dpcm) { @media {
-
-    #overlay{
-      display:none;
-    }
-    #overlayabout{
-      display:none;
-    }
-}}
 button{
   border: none;
   background-color: rgba(1,1,1,0);
@@ -612,3 +602,31 @@ blockquote span{
     margin:0px 0px 0px 30px;
   }
 }
+/* make this overlay thing not work on safari */
+_::-webkit-full-page-media, _:future, :root .safari_only {
+
+  #overlay, #overlayabout{
+    display:none;
+  }
+
+}
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    #overlay{
+      display:none;
+    }
+    #overlayabout{
+      display:none;
+    }
+}}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  #overlay{
+    display:none;
+  }
+  #overlayabout{
+    display:none;
+  }
+}}
