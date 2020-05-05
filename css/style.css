@@ -538,9 +538,8 @@ blockquote span{
     right:140px;
   }
   .intro{
-    padding:30px;
+    padding:20% 30px 30px 30px;
     font-size: 36px;
-    padding-top:10%;
   }
   button{
     font-size:36px;
