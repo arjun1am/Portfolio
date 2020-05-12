@@ -227,12 +227,14 @@ p{
   opacity:0;
   visibility: hidden;
   transform: translate3d(-5px,0,0);
-  transition: .2s ease;
+  clip-path: circle(0% at 99% 99%);
+  transition: .4s ease;
 }
 .projectlink:hover .hidden{
   visibility: visible;
   opacity: 1;
   transform: translate3d(0,0,0);
+  clip-path: circle(100% at 50% 50%);
   transform: rotate(-7deg);
 }
 .arrow{
