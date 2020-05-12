@@ -219,11 +219,24 @@ p{
   width:500px;
   height:290px;
   background-color:#d1d5ff;
-  transform:rotate(7deg);
+  transform:rotate(7deg)scale(1.1);
+  opacity:.4;
   z-index:1;
   transition:.4s ease;
   border-radius:10px;
   transform-origin: center;
+  animation: transition2 4s cubic-bezier(0.87, 0, 0.13, 1);
+}
+@keyframes transition2 {
+  0% {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  30% {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  100%{
+    clip-path: polygon(0 100%, 100% 145%, 100% 0, 0 0);
+  }
 }
 .projsection{
   max-width:400px;
