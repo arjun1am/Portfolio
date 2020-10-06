@@ -322,6 +322,17 @@ p{
   bottom:150px;
   right:250px;
 }
+/* task ninja project hover */
+.scaleninja{
+  width:400px;
+}
+#ninja.projectlink:hover .hidden{
+  transform: rotate(-7deg);
+}
+#ninjapreview.hidden{
+  bottom:150px;
+  right:200px;
+}
 /* band link section */
 .band{
   overflow: hidden;
@@ -343,12 +354,12 @@ p{
   color:#233042;
   padding:10px;
   transform:translateX(-99%);
-  animation: demo-1 20s linear infinite;
-  animation-play-state: paused;
+  animation: demo-1 40s linear infinite;
+  animation-play-state: running;
   white-space: nowrap;
 }
 .band:hover > #marquee{
-  animation-play-state: running;
+  animation-play-state: paused;
 }
 .band a{
   text-decoration: none;
@@ -505,6 +516,9 @@ footer a:hover{
   border-radius:2%;
   overflow:hidden;
 }
+.paragraphsplitvid span{
+  width:300px;
+}
 video{
   margin:2%;
   border-radius: 10px;
@@ -537,6 +551,8 @@ video{
   margin-top:5%;
   margin-bottom:5%;
   background-color:rgba(17,15,17,1);
+  max-width:1400px;
+  margin:auto;
 }
 .tedgifs{
   background-color:#fbf6f7;

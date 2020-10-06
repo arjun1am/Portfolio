@@ -96,6 +96,17 @@
           </p>
          </a>
      </div>
+     <div class="projsection">
+     <a class="projectlink" id="ninja" href="https://medium.com/design-bootcamp/completing-tasks-you-dont-feel-like-doing-47e650dd6ca5" target="_blank">
+       <span class="name"> Task Ninja <span class="arrow">→</span></span>
+       <div id="ninjapreview" class="hidden">
+         <img class="scaleninja"src="assets/portfolioTN.gif" alt="taskninja motion graphic preview">
+       </div>
+      <p class="subproj">
+       Helping people complete tasks they don't feel like doing through rewarding and satisfying interaction and animation.
+      </p>
+     </a>
+ </div>
     </div>
 
     <div class="band">
@@ -110,7 +121,8 @@
       <div class="projnav">
         <a href="html/projectcometta.html">Cometta</a><br>
         <a href="html/projecttedx.html">TEDx</a><br>
-        <a href="html/about.html">About</a><br>
+        <a href="https://medium.com/design-bootcamp/completing-tasks-you-dont-feel-like-doing-47e650dd6ca5" target="_blank">Task Ninja</a><br>
+
       </div>
       <div class="contact">
         <a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a><br>
@@ -118,7 +130,7 @@
         <a href="mailto:arjuna1am.am@gmail.com">Email</a>
       </div>
       <div class="siteinfo">
-        Designed and Coded by Arjun Menon  <br>
+        Designed and Coded by <a href="html/about.html">Arjun Menon</a><br>
         Typefaces: P22 mackinac Pro and Inter
       </div>
     </footer>
@@ -138,6 +150,14 @@ $(function() {
       $('.previewbox').css({'background-color':'pink','transform':'scale(.9)rotate(-9deg)','opacity':'.7'});
   }, function() {
 // on mouseout, reset the background colour
+      $('.previewbox').css({'background-color': '#d1d5ff','transform':'scale(1)rotate(7deg)','opacity':'.4'});
+    });
+  });
+$(function() {
+  $('#ninja.projectlink').hover(function() {
+      $('.previewbox').css({'background-color':'#22B573','transform':'scale(.9)rotate(7deg)','opacity':'.7'});
+  }, function() {
+  // on mouseout, reset the background colour
       $('.previewbox').css({'background-color': '#d1d5ff','transform':'scale(1)rotate(7deg)','opacity':'.4'});
     });
   });
