@@ -6,69 +6,133 @@
     <meta name="description" content="Portfolio of Arjun Menon, a digital designer based out of San Diego">
   </head>
 <body>
-    <h5>ARJUN MENON<br> DIGITAL DESIGNER</h5>
-    <p><a href="mailto:arjuna1am.am@gmail.com">Email 
-    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.4142 6.26777L5.94974 2.73224M5.94974 2.73224H3.12131M5.94974 2.73224V5.56066" stroke="rgb(78, 78, 78)" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </a></p>
-    <p><a href="https://dribbble.com/arjuna1am" target="_blank">Dribbble</a></p>
-    <p><a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a></p>
-    <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a></p>
 
-    <div class="vidflex"></div>
-        <video width="500" autoplay muted loop>
-            <source src="assets/Comp 2_1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video> 
-        <p class="space">I helped Four Fin Creative, a San Diego based brand studio, elevate their website 
-            through motion design and more dynamic page layouts.</p>
-        <video width="500" autoplay muted loop>
-            <source src="assets/Comp 3_2.m4v" type="video/mp4">
-        Your browser does not support the video tag.
-        </video> 
+<div class="divflex">
+
+    <div class="flexchild2">
+        <p class="display">ARJUN MENON</p>
     </div>
-    <hr>
-    <!-- <img class="scaleted"src="assets/testimg.png" alt="four fin video"> -->
-    <p class="space">Designed and developed by Arjun Menon.</p>
+
+    <div class="divflex flexchild3">
+        <div class="flexchild">
+            <p>Digital Design</p>
+            <p>Interaction Design</p>
+            <p>User Interface Design</p>
+            <p>Experience Design</p>
+            <p>Visual Design</p>
+            <p>Motion Design</p>
+         </div>
+
+        <div class="flexchild">
+            <p><a href="mailto:arjuna1am.am@gmail.com">Email 
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.4142 6.26777L5.94974 2.73224M5.94974 2.73224H3.12131M5.94974 2.73224V5.56066" stroke="rgb(78, 78, 78)" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a></p>
+            <p><a href="https://dribbble.com/arjuna1am" target="_blank">Dribbble</a></p>
+            <p><a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+
+</div>
+
+    <video class="topvid" width="500" autoplay muted loop>
+       <source src="assets/Comp 2_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video> 
+
+    <p>I helped Four Fin Creative, a San Diego based brand studio, elevate their website 
+        through motion design and more dynamic page layouts.
+    </p>
+
+    <video width="500" autoplay muted loop>
+        <source src="assets/Comp 3_2.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
+
+    <div class="divflex footer">
+
+        <div class="flexchild2">
+            Designed and developed by Arjun Menon.
+        </div>
+
+        <div class="divflex flexchild3">
+            <div class="flexchild">
+                <p>SD</p>
+            </div>
+
+            <div class="flexchild">
+                <p>07.2021</p>
+            </div>
+            
+              
+        </div>
+        
+    </div>
 
 </body>
+
 <style>
     html{
-        font-family: Helvetica, Arial, sans-serif;
     }
     body{
-        padding:1% 3% 0px 3%;
-        color:rgb(78, 78, 78);
+        font-family: Helvetica, Arial, sans-serif;
+        padding:1% 1% 0px 1%;
+        color:rgb(36, 36, 36);
+        margin:auto;
+        overflow-x: hidden;
+        max-width: 100%;
     }
+
+    .divflex{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+    .flexchild{
+        flex-grow:1;
+        width:200px;
+    }
+    .flexchild2{
+        flex-grow:2;
+        width:50vw;
+    }
+    .flexchild3{
+        flex-grow:2;
+    }
+    .footer{
+        font-size:13px;
+        margin-bottom:2%;
+        color:rgb(126, 126, 126);
+    }
+
     P{
         margin:3px 0% 3px 0%;
         font-size:13px;
         max-width: 400px;
         line-height: 137%;
+        color:rgb(126, 126, 126);
+    }
+    .display{
+        font-size: 3em;
+        line-height: 100%;
+        height:100px;
+        color:rgb(36, 36, 36);
+
     }
     a{
-        color:rgb(78, 78, 78);
+        color:rgb(126, 126, 126);
     }
-    img{
-        width:100%;
-        margin:3% 0% 3% 0%;
+
+    .topvid{
+        margin-top:300px;
     }
     video{
         width:100%;
         margin:3% 0% 3% 0%;
-    }
-    .vidflex{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    hr{
-        opacity:10%;
-    }
-    .space{
-        margin:5% 0% 5% 0%;
-    }
 
-</style>
+    }
+    </style>
 </html>
