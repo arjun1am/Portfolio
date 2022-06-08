@@ -21,11 +21,13 @@
             <p>Motion Design</p>
          </div>
         <div class="flexchild">
-            <p><a href="mailto:arjuna1am.am@gmail.com">Email 
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.4142 6.26777L5.94974 2.73224M5.94974 2.73224H3.12131M5.94974 2.73224V5.56066" stroke="rgb(78, 78, 78)" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a></p>
+            <p>
+                <a href="mailto:arjuna1am.am@gmail.com">Email 
+                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.4142 6.26777L5.94974 2.73224M5.94974 2.73224H3.12131M5.94974 2.73224V5.56066" stroke="rgb(78, 78, 78)" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </p>
             <p><a href="https://dribbble.com/arjuna1am" target="_blank">Dribbble</a></p>
             <p><a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a></p>
             <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a></p>
@@ -47,16 +49,22 @@
                 <p>Interactive Web Design</p>
                 <p>Front End Development</p>
                 <p>Visual Design & Direction</p>
-                <p></p>
+                <p>
+                    <div class="tooltip">
+                        Featured on <a href="https://klikkentheke.com/catalogue/being-nature/" target="_blank">Klikkenthéke</a>
+                        <span class="tooltiptext"> <img src="assets/KlikkenthekeGrab.png" alt="Website preview"  height="300"></span>
+                    </div>
+                </p>
+
+        
+
             </div>
             <div class="flexchild">
                 <p><a href="https://www.beingnature.one/" target="_blank">Being Nature</a> presents a series of questions and provides a space to 
                     reflect on one's relationship, understanding, and experience of nature. 
                     The website's design and development was created with a bold yet minimalist 
                     approach with animations and interactions that bring a slow and mindful 
-                    quality to the experience.
-                    <br>
-                    Featured on <a href="https://klikkentheke.com/catalogue/being-nature/" target="_blank">Klikkentheke</a>
+                    quality to the experience.                
                 </p>
             </div>
         </div>
@@ -180,6 +188,36 @@
         margin-top:100px;
         } 
 }
+/* tooltip stuff */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size:13px;
+  max-width: 400px;
+  line-height: 137%;
+  color:rgb(126, 126, 126);
 
-    </style>
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity:0;
+  border-radius: 3px;
+  box-shadow:1px 1px 18px 1px rgba(0,0,0,0.13);
+  transition: .3s ease;
+  background-color: white;
+  border:1px solid rgb(204, 204, 204);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -10vw;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  bottom: 135%;
+}
+</style>
+
 </html>
