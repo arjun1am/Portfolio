@@ -13,12 +13,11 @@
     </div>
     <div class="divflex flexchild3">
         <div class="flexchild">
-            <p>Digital Design</p>
             <p>Interactive Design</p>
             <p>User Interface Design</p>
-            <p>Experience Design</p>
             <p>Visual Design</p>
             <p>Motion Design</p>
+
          </div>
         <div class="flexchild">
             <p>
@@ -28,7 +27,7 @@
                     </svg>
                 </a>
             </p>
-            <p><a href="https://dribbble.com/arjuna1am" target="_blank">Dribbble</a></p>
+            <p><a href="https://twitter.com/arjun1am" target="_blank">Twitter</a></p>
             <p><a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a></p>
             <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a></p>
         </div>
@@ -49,6 +48,7 @@
                 <p>Interactive Web Design</p>
                 <p>Front End Development</p>
                 <p>Visual Design & Direction</p>
+            
                 <p>
                     <div class="tooltip">
                         Featured on <a href="https://klikkentheke.com/catalogue/being-nature/" target="_blank">Klikkenthéke</a>
@@ -60,7 +60,7 @@
 
             </div>
             <div class="flexchild">
-                <p><a href="https://www.beingnature.one/" target="_blank">Being Nature</a> presents a series of questions and provides a space to 
+                <p> Being Nature presents a series of questions and provides a space to 
                     reflect on one's relationship, understanding, and experience of nature. 
                     The website's design and development was created with a bold yet minimalist 
                     approach with animations and interactions that bring a slow and mindful 
@@ -70,10 +70,17 @@
         </div>
     </div>
 
-    <video width="500" autoplay muted loop>
+<div class="twoup">
+    <video class="fifty" width="500" autoplay muted loop>
        <source src="assets/Comp 2_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video> 
+
+    <video class="fifty" width="500" autoplay muted loop>
+        <source src="assets/cursorcorner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
+</div>
 
     <div class="divflex">
         <div class="flexchild2">
@@ -93,18 +100,13 @@
         </div>
     </div>
 
-    <video width="500" autoplay muted loop>
-        <source src="assets/cursorcorner.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> 
-
     <div class="divflex footer">
         <div class="flexchild2">
-            Designed and developed by Arjun Menon.
+            Designed and Developed by Arjun Menon.
         </div>
         <div class="divflex flexchild3">
             <div class="flexchild">
-                <p>SD</p>
+                <p>🌐SD</p>
             </div>
             <div class="flexchild">
                 <p>07.2021</p>
@@ -120,7 +122,7 @@
     body{
         font-family: Helvetica, Arial, sans-serif;
         padding:1% 1% 0px 1%;
-        color:rgb(36, 36, 36);
+        color:black;
         margin:auto;
         overflow-x: hidden;
         max-width: 100%;
@@ -132,6 +134,14 @@
         justify-content:flex-start;
         align-items: flex-start;
     }
+    
+    .footer.divflex{
+        font-size:13px;
+        margin-bottom:1px;
+        margin-top:75vh;
+        color:black;
+    }
+
     .flexchild{
         flex-grow:1;
         width:200px;
@@ -143,36 +153,30 @@
     .flexchild3{
         flex-grow:2;
     }
-    .footer{
-        font-size:13px;
-        margin-bottom:2%;
-        color:rgb(126, 126, 126);
-    }
 
     p{
         margin:3px 0% 3px 0%;
         font-size:13px;
         max-width: 400px;
         line-height: 137%;
-        color:rgb(126, 126, 126);
+        color:black;
     }
     .desc{
-        color:rgb(36, 36, 36);
+        color:black;
     }
     .display{
         font-size: 3em;
         line-height: 100%;
         height:100px;
-        color:rgb(36, 36, 36);
+        color:black;
     }
     .display2{
-        font-size: 3em;
+        font-size: 13px;
         line-height: 100%;
         height:100px;
-        color:rgb(36, 36, 36,.5);
     }
     a{
-        color:rgb(126, 126, 126);
+        color:black;
     }
 
     .topvid{
@@ -180,9 +184,24 @@
     }
     video{
         width:100%;
-        margin:5% 0% 5% 0%;
+        margin:9% 0% 20px 0%;
 
     }
+    .twoup{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:flex-start;
+        align-items: flex-start;
+        margin-top:36vh;
+        gap: 10px;
+    }
+    .fifty{
+        flex-grow: 1;
+        min-width:400px;
+        width:30%;
+        margin-top:2%;
+    }
+
     @media only screen and (max-width: 600px) {
         .topvid{
         margin-top:100px;
@@ -193,30 +212,26 @@
   position: relative;
   display: inline-block;
   font-size:13px;
-  max-width: 400px;
+  max-width: 440px;
   line-height: 137%;
-  color:rgb(126, 126, 126);
-
+  color:black;
 }
 .tooltip .tooltiptext {
   visibility: hidden;
   opacity:0;
-  border-radius: 3px;
-  box-shadow:1px 1px 18px 1px rgba(0,0,0,0.13);
-  transition: .3s ease;
+  border-radius: 0px;
+  transition: .2s ease;
   background-color: white;
-  border:1px solid rgb(204, 204, 204);
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 40%;
-  left: 50%;
-  margin-left: -10vw;
+  right:100%;
+  bottom: -400%;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  bottom: 135%;
+  bottom: -400%;
 }
 </style>
 
