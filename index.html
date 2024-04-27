@@ -13,23 +13,23 @@
     </div>
     <div class="divflex flexchild3">
         <div class="flexchild">
-            <p>Interactive Design</p>
-            <p>User Interface Design</p>
-            <p>Visual Design</p>
-            <p>Motion Design</p>
+            <p>INTERACTIVE DESIGN </p>
+            <p>UI DESIGN</p>
+            <p>VISUAL DESIGN</p>
+            <p>MOTION DESIGN</p>
 
          </div>
         <div class="flexchild">
             <p>
-                <a href="mailto:arjuna1am.am@gmail.com">Email 
+                <a href="mailto:arjuna1am.am@gmail.com">EMAIL 
                     <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.4142 6.26777L5.94974 2.73224M5.94974 2.73224H3.12131M5.94974 2.73224V5.56066" stroke="rgb(78, 78, 78)" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
             </p>
-            <p><a href="https://twitter.com/arjun1am" target="_blank">Twitter</a></p>
-            <p><a href="https://www.instagram.com/arjun1am/" target="_blank">Instagram</a></p>
-            <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LinkedIn</a></p>
+            <p><a href="https://twitter.com/arjun1am" target="_blank">TW</a></p>
+            <p><a href="https://www.instagram.com/arjun1am/" target="_blank">IG</a></p>
+            <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LI</a></p>
         </div>
     </div>
 </div>
@@ -102,14 +102,14 @@
 
     <div class="divflex footer">
         <div class="flexchild2">
-            Designed and Developed by Arjun Menon.
+            SD
         </div>
         <div class="divflex flexchild3">
             <div class="flexchild">
-                <p>🌐SD</p>
+                <p>LAST UPDATED:</p>
             </div>
             <div class="flexchild">
-                <p>07.2021</p>
+                <p>04.2024</p>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
     }
 
     p{
-        margin:3px 0% 3px 0%;
+        margin:0px 0% 0px 0%;
         font-size:13px;
         max-width: 400px;
         line-height: 137%;
@@ -233,9 +233,48 @@
   opacity: 1;
   bottom: -400%;
 }
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
 </style>
 
-<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.328/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/kBln6NRvDV2-HFaq/scene.splinecode"></spline-viewer>
+<script src="https://unpkg.com/lenis@1.0.45-dev.0/dist/lenis.min.js"></script> 
+<script>
+
+lenis = new Lenis({
+    lerp: 0.1,
+    wheelMultiplier: 0.5,
+    gestureOrientation: "vertical",
+    normalizeWheel: false,
+    smoothTouch: false
+  });
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+</script>
 
 </html>
