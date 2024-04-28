@@ -34,6 +34,27 @@
     </div>
 </div>
 
+    <a href="https://www.basicagency.com/" target="_blank">
+    <img class="topvid basic" src="assets/basicwork.png" >
+    </a>
+
+    <div class="divflex">
+        <div class="flexchild2">
+            <p class="display2">02.2022-NOW</p>
+        </div>
+        <div class="divflex flexchild3">
+            <div class="flexchild">
+                <p>Visual Design</p>
+                <p>Brand Design</p>
+                <p>Motion Design</p>
+            </div>
+            <div class="flexchild">
+                <p>I joined BASIC/DEPT® in 2022, designing primarily for the brand, marketing, and growth efforts.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <video class="topvid" width="500" autoplay muted loop>
         <source src="assets/BeingNaturewebsite.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -126,6 +147,9 @@
         margin:auto;
         overflow-x: hidden;
         max-width: 100%;
+        background-color: white;
+        transition:.4s cubic-bezier(0.5, 0, 0, 1);
+
     }
 
     .divflex{
@@ -180,13 +204,22 @@
     }
 
     .topvid{
-        margin-top:300px;
+        margin-top:45vh;
+        width:100%;
     }
     video{
         width:100%;
         margin:9% 0% 20px 0%;
-
     }
+    .basic{
+        transform:translateY(0);
+        transition:.4s cubic-bezier(0.5, 0, 0, 1);
+    }
+    .basic:hover{
+        transform:translateY(-1%);
+    }
+
+  
     .twoup{
         display:flex;
         flex-flow:row wrap;
@@ -275,6 +308,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
 </script>
 
 </html>
