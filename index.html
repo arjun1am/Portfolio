@@ -32,24 +32,21 @@
             <p><a href="https://www.linkedin.com/in/arjun1am" target="_blank">LI</a></p>
         </div>
     </div>
-</div>
-
-    <a href="https://www.basicagency.com/" target="_blank">
-    <img class="topvid basic" src="assets/basicwork.png" >
-    </a>
-
+</div> 
+    <img class="topvid" src="assets/basicwork.png" >
     <div class="divflex">
         <div class="flexchild2">
             <p class="display2">02.2022-NOW</p>
         </div>
         <div class="divflex flexchild3">
             <div class="flexchild">
+                <p>Interactive Design</p>
                 <p>Visual Design</p>
                 <p>Brand Design</p>
                 <p>Motion Design</p>
             </div>
             <div class="flexchild">
-                <p>I joined BASIC/DEPT® in 2022, designing primarily for brand, marketing, and growth projects.
+                <p>I joined <a href="https://www.basicagency.com/" target="_blank">BASIC/DEPT®</a> in 2022, designing primarily for brand, marketing, and growth projects.
                 </p>
             </div>
         </div>
@@ -73,7 +70,7 @@
                 <p>
                     <div class="tooltip">
                         Featured on <a href="https://klikkentheke.com/catalogue/being-nature/" target="_blank">Klikkenthéke</a>
-                        <span class="tooltiptext"> <img src="assets/KlikkenthekeGrab.png" alt="Website preview"  height="300"></span>
+                        <span class="tooltiptext"> <img src="assets/KlikkenthekeGrab.png" alt="Website preview"  height="200"></span>
                     </div>
                 </p>
 
@@ -91,36 +88,6 @@
         </div>
     </div>
 
-<div class="twoup">
-    <video class="fifty" width="500" autoplay muted loop>
-       <source src="assets/Comp 2_1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video> 
-
-    <video class="fifty" width="500" autoplay muted loop>
-        <source src="assets/cursorcorner.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> 
-</div>
-
-    <div class="divflex">
-        <div class="flexchild2">
-            <p class="display2">04.2021</p>
-        </div>
-        <div class="divflex flexchild3">
-            <div class="flexchild">
-                <p>Interactive Web Design</p>
-                <p>Front End Development</p>
-                <p>Animated UI Design</p>
-            </div>
-            <div class="flexchild">
-                <p>I helped Four Fin Creative, a San Diego based brand studio, elevate their website 
-                    through motion design and redesigned page layouts. 
-                </p>
-            </div>
-        </div>
-    </div>
-
     <div class="divflex footer">
         <div class="flexchild2">
             SD
@@ -130,7 +97,7 @@
                 <p>LAST UPDATED:</p>
             </div>
             <div class="flexchild">
-                <p>04.2024</p>
+                <p>06.2024</p>
             </div>
         </div>
     </div>
@@ -211,29 +178,7 @@
         width:100%;
         margin:9% 0% 20px 0%;
     }
-    .basic{
-        transform:translateY(0);
-        transition:.4s cubic-bezier(0.5, 0, 0, 1);
-    }
-    .basic:hover{
-        transform:translateY(-1%);
-    }
-
   
-    .twoup{
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:flex-start;
-        align-items: flex-start;
-        margin-top:36vh;
-        gap: 10px;
-    }
-    .fifty{
-        flex-grow: 1;
-        min-width:400px;
-        width:30%;
-        margin-top:2%;
-    }
 
     @media only screen and (max-width: 600px) {
         .topvid{
@@ -253,18 +198,20 @@
   visibility: hidden;
   opacity:0;
   border-radius: 0px;
-  transition: .2s ease;
+  transition: 0s linear;
   background-color: white;
   /* Position the tooltip */
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  right:100%;
-  bottom: -400%;
+  bottom:10px;
+  left:10px;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  bottom: -400%;
+  bottom:10px;
+  left:10px;
+
 }
 
 html.lenis, html.lenis body {
