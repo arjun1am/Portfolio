@@ -56,7 +56,7 @@
 
         /* Play/Pause Button Container */
         .play-pause-button {
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.1);
             border-radius: 50%;
             margin:10px;
             width: 60px;
@@ -67,11 +67,11 @@
             cursor: pointer; /* Cursor on the button */
             transition: background-color 0.3s ease;
             z-index: 10; /* Ensure it's above the overlay */
-            opacity:0;
+            opacity:0.1;
         }
 
         .play-pause-button:hover {
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         /* SVG Icons within Play/Pause Button */
@@ -149,11 +149,11 @@
         // Function to update icon visibility
         function updatePlayerUI() {
             if (video.paused || video.ended) {
-                playIcon.style.display = 'block';
+                playIcon.style.display = 'none';
                 pauseIcon.style.display = 'none';
             } else {
                 playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
             }
             // videoOverlay is always visible due to CSS
         }
