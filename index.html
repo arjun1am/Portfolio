@@ -5,113 +5,50 @@
     <meta name="description" content="Portfolio of Arjun Menon, Designer at BASIC/DEPT®">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Arjun Menon — Designer</title>
-
+    <script src="playerjs.js" type="text/javascript"></script>
     <style>
         body {
             margin: 0;
             padding: 10px;
-            background-color: #f0f0f0;
+            background-color: white;
             font-family: sans-serif;
-            display: flex;
-            justify-content:center;
-            align-items:center;
-            width:100vw;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-
-        /* Video Player Container */
-        .custom-video-player {
-            position: relative;
-            width: 100%;
-            max-width: 700px; /* Example max width */
-            margin: 0 auto;
-            aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
-            overflow: hidden;
-            background-color: #000;
-        }
-
-        /* Actual Video Element */
-        .custom-video-player video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Overlay that covers the video (always visible) */
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0); /* Slightly transparent overlay, adjust as desired */
-            display: flex; /* Always flex so it's always there */
-            justify-content: left;
-            align-items:end;
-            cursor: pointer; /* Indicates it's clickable */
-            z-index: 5;
-        }
-
-        /* Play/Pause Button Container */
-        .play-pause-button {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            margin:10px;
-            width: 60px;
-            height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer; /* Cursor on the button */
-            transition: background-color 0.3s ease;
-            z-index: 10; /* Ensure it's above the overlay */
-            opacity:0.1;
+            width: 100vw;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
-
-        .play-pause-button:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* SVG Icons within Play/Pause Button */
-        .play-pause-button svg {
-            width: 30px;
-            height: 30px;
+        .header, a {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            line-height: 15px;
             color: black;
-            opacity:0;
-            transform: translateX(1px); /* Slight adjustment for play icon visual centering */
+            list-style-type: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
         }
-
-        /* Initial states (controlled by JS) */
-        .play-icon, .pause-icon {
-            display: none;
+        .header {
+            position: absolute;
+            top: 0px;
+            left: 10px;
         }
-
-        .header, a{
-          font-family:Helvetica, Arial, sans-serif;
-          font-size:13px;
-          line-height:15px;
-          color:black;
-          list-style-type: none;
-          text-decoration: none;
-          display:flex;
-          flex-direction: column;
+        a:hover {
+            opacity: 0.5;
         }
-        .header{
-          position:absolute;
-          top:0px;
-          left:10px;
+        #player{
+          max-width:700px;
+          height:100%;
         }
-        a:hover{
-          opacity:0.5;
-        }
-
     </style>
 </head>
+
+<script>
+   var player = new Playerjs({id:"player", file:"https://portfolio-videos.b-cdn.net/note4.mp4"});
+</script>
+
 <body>
-
-
   <div class="header">
     <p>ARJUN MENON, DESIGNER</p>
     <a href="mailto:arjuna1am.am@gmail.com">EMAIL</a>
@@ -119,79 +56,7 @@
     <a href="https://www.instagram.com/arjun1am/" target="_blank">INSTAGRAM</a>
     <a href="https://savee.it/arjun1am/" target="_blank">SAVEE</a>
   </div>
-
-<!-- 
-    <div class="custom-video-player">
-        <video id="myVideo" controls="false" autoplay muted loop playsinline preload="auto">
-            <source src="https://portfolio-videos.b-cdn.net/note4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        
-        <div class="video-overlay">
-            <div class="play-pause-button">
-                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
-                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                </svg>
-            </div>
-        </div>
-    </div> -->
-
-    <script>
-        const video = document.getElementById('myVideo');
-        const videoOverlay = document.querySelector('.video-overlay');
-        const playIcon = document.querySelector('.play-icon');
-        const pauseIcon = document.querySelector('.pause-icon');
-
-        // Function to update icon visibility
-        function updatePlayerUI() {
-            if (video.paused || video.ended) {
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'none';
-            } else {
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'none';
-            }
-            // videoOverlay is always visible due to CSS
-        }
-
-        // --- NO HLS.JS INITIALIZATION NEEDED FOR DIRECT MP4/WEBM ---
-        // The browser's native video element handles playback directly.
-
-        // Event listeners for video state changes
-        video.addEventListener('play', updatePlayerUI);
-        video.addEventListener('pause', updatePlayerUI);
-        video.addEventListener('ended', updatePlayerUI);
-        
-        // Event listener for the custom play/pause button/overlay
-        // Clicking anywhere on the overlay will toggle play/pause
-        videoOverlay.addEventListener('click', () => {
-            if (video.paused || video.ended) {
-                // When playing, attempt to play. If blocked (e.g. by browser policy),
-                // the catch block will handle updating UI and ensure muted.
-                video.play().catch(error => {
-                    console.warn("Play attempt blocked:", error);
-                    video.muted = true; // Ensure it's muted if play was blocked by browser
-                    updatePlayerUI(); // Update UI to reflect potential paused/muted state
-                });
-            } else {
-                video.pause();
-            }
-        });
-
-        // Initial UI update when the video metadata is loaded or ready
-        video.addEventListener('loadedmetadata', updatePlayerUI);
-        video.addEventListener('canplay', updatePlayerUI);
-        
-        // Fallback for initial update if events fire too quickly
-        setTimeout(updatePlayerUI, 100); 
-
-    </script>
-
+  <div id="player"></div>
 </body>
-</html>
 
-  
+</html>
